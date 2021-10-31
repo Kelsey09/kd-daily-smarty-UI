@@ -1,4 +1,7 @@
-import { SET_RECENT_POSTS } from './types';
+import { 
+    SET_RECENT_POSTS,
+    SET_RESULTS_POSTS
+} from './types';
 
 import axios from "axios"
 
@@ -8,7 +11,7 @@ export function fetchRecentPosts() {
         .then(response => {
             console.log(response.data.posts);
             dispatch({
-                type: SET_RECENT_POSTS,
+                type: SET_RESULTS_POSTS,
                 payload: response.data.posts
             });
         })
