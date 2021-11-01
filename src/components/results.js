@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Logo from "./logo";
+import Logo from './logo';
 import SearchBar from './search-bar';
 import ResultsPosts from './results-posts';
 
@@ -11,6 +11,7 @@ class Results extends Component {
     handleSearchBarSubmit(query) {
         this.props.fetchPostsWithQuery(query);
     }
+    
     render() {
         return (
             <div>
