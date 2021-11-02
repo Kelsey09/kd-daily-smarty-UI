@@ -8,40 +8,46 @@
 }
 
 .results-posts {
-
+    display: grid;
+    grid-row-gap: 21px;
     .results-posts__wrapper {
         .results-posts__posts {
             display: grid;
-            grid-row-gap: 21px;
+            grid-row-gap: 20px;
             justify-content: stretch;
         }
     }
 }
 
-.results-post {
+.result-post {
     display: grid;
     align-content: space-around;
-    grid-row-gap: 20px;
+    grid-row-gap: 22px;
 
-    .results-post__topics >* {
+    .result-post__topics > * {
         color: $color-blue-one;
         font-size: 14px;
         line-height: 17px;
         font-weight: normal;
     }
-    .results-post__title a {
+
+    .result-post__title a {
         color: $color-gray-one;
         font-size: 18px;
-        
+        line-height: 22px;
+        text-decoration: none;
     }
-    .results-post__links {
-        
+    .result-post__links {
+        display: flex;
+        // height: 70px;
     }
 }
 
 .post-link {
     min-height: 70px;
     display: flex;
+    flex-basis: 205px;
+    margin-right: 37px;
     .post-link__box {
         min-width: 70px;
         background-color: $color-gray-three;
