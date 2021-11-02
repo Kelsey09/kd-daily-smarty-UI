@@ -15,8 +15,14 @@ body {
     display: grid;
     height: 100vh;
     width: 66vw;
-    justify-items: center;
+    justify-items: stretch;
     align-content: space-around;
+}
+
+.logo-main,
+.recent-posts {
+    display: grid;
+    justify-items: center;
 }
 
 $color-gray-one: #666666;
